@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f117318e1a83c5c489fa1342c771d042, type: 3}
+  m_Name: Pan
+  m_EditorClassIdentifier: Assembly-CSharp::BlockyBattleRoyale.Weapons.WeaponData
+  weaponName: Pan
+  fireMode: 0
+  ammoType: 0
+  damage: 28
+  fireRate: 1.8
+  magazineSize: 1
+  reloadTime: 0.1
+  range: 1.85
+  recoilPitch: 1.2
+  recoilYaw: 0.4
+  hipSpread: 0
+  aimSpread: 0
+  moveSpreadMultiplier: 1.6
+  pelletCount: 1
+  isMelee: 1
+  meleeRange: 1.85
+  meleeRadius: 0.6
+  weaponColor: {r: 0.55, g: 0.55, b: 0.6, a: 1}
+  muzzleLocalOffset: {x: 0, y: 0.05, z: 0.45}

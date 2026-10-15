@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bd5fd7232de935439a766ba15c2dd39, type: 3}
+  m_Name: Suppressor
+  m_EditorClassIdentifier: Assembly-CSharp::BlockyBattleRoyale.Items.ItemData
+  itemName: Suppressor
+  category: 7
+  icon: {fileID: 0}
+  tint: {r: 0.2, g: 0.2, b: 0.22, a: 1}
+  maxStack: 1
+  weight: 1
+  worldScale: {x: 0.6, y: 0.35, z: 0.6}
+  weaponData: {fileID: 0}
+  attachmentData: {fileID: 11400000, guid: ed79abb40e7f9a547906dee1a2392477, type: 2}
+  ammoType: 0
+  ammoAmount: 30
+  armorLevel: 1
+  damageReduction: 0.2
+  durability: 100
+  healType: 0
+  healAmount: 15
+  useDuration: 2.5
+  blockActionsWhileUsing: 1
+  throwableType: 0
+  throwForce: 14
+  explodeDelay: 2.2
+  explodeRadius: 5
+  explodeDamage: 80
+  smokeDuration: 10
+  smokeRadius: 6

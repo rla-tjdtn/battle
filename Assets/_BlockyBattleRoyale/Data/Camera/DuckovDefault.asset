@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a3d12dca0ae364e8ed032d26c33627, type: 3}
+  m_Name: DuckovDefault
+  m_EditorClassIdentifier: Assembly-CSharp::BlockyBattleRoyale.CameraSystem.CameraProfile
+  pitchAngle: 60
+  yawAngle: 45
+  distance: 22
+  heightBias: 2.5
+  followSmoothTime: 0.14
+  lookAhead: 3.2
+  maxLookAhead: 5.5
+  aimLookAheadMul: 1.4
+  useOrthographic: 0
+  fieldOfView: 40
+  aimFieldOfView: 36
+  orthographicSize: 11
+  aimOrthoSize: 9.5
+  targetCharScreenHeight: 0.09
+  charWorldHeight: 1.8

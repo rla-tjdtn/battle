@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bfa039529b1877478c4cc94d10d0855, type: 3}
+  m_Name: Compensator
+  m_EditorClassIdentifier: Assembly-CSharp::BlockyBattleRoyale.Weapons.WeaponAttachmentData
+  attachmentName: Compensator
+  slot: 1
+  spreadMul: 0.9
+  recoilMul: 0.75
+  rangeBonus: 0
+  magazineBonus: 0
+  aimOffsetBonus: 1.1
+  tint: {r: 0.3, g: 0.3, b: 0.32, a: 1}
+  isSuppressor: 0
+  hearRangeMultiplier: 1

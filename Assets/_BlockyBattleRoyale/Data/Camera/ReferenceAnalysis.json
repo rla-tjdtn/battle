@@ -1,0 +1,49 @@
+{
+  "version": 3,
+  "measuredAt": "2026-10-15",
+  "images": [
+    {
+      "id": "A_outdoor",
+      "roles": ["Reference_Camera", "Reference_Environment", "Reference_Lighting"],
+      "resolution": { "w": 1024, "h": 576 },
+      "characterHeightNorm": 0.09,
+      "characterCenterNorm": { "x": 0.5, "y": 0.54 },
+      "projection": "perspective",
+      "pitchVisualDeg": [60, 70],
+      "yawVisualDeg": 45,
+      "notes": "Container yard, warm light, dense props"
+    },
+    {
+      "id": "B_indoor",
+      "roles": ["Reference_Indoor", "Reference_Buildings", "Reference_Visibility"],
+      "resolution": { "w": 1024, "h": 576 },
+      "characterHeightNorm": 0.066,
+      "roofState": "hidden_or_faded",
+      "wallHeightVsChar": 2.0,
+      "notes": "Roof removed, quarter-view kept"
+    },
+    {
+      "id": "C_forest",
+      "roles": ["Reference_Forest", "Reference_CharacterScale"],
+      "resolution": { "w": 1024, "h": 576 },
+      "characterHeightNorm": 0.083,
+      "treeHeightVsChar": [4, 6],
+      "notes": "Pine silhouettes, campsite props"
+    }
+  ],
+  "unityTargets": {
+    "charScreenHeightOutdoor": { "min": 0.08, "max": 0.10 },
+    "charScreenHeightIndoor": { "min": 0.06, "max": 0.08 },
+    "pitch": 60,
+    "yaw": 45,
+    "fov": 40,
+    "distance": 22,
+    "projection": "perspective"
+  },
+  "unverified": [
+    "official_fov",
+    "official_camera_distance",
+    "roof_fade_implementation_details",
+    "exact_vision_range_meters"
+  ]
+}

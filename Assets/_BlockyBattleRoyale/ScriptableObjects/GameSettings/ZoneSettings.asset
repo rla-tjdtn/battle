@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee099453411745048861d98e96e89c17, type: 3}
+  m_Name: ZoneSettings
+  m_EditorClassIdentifier: Assembly-CSharp::BlockyBattleRoyale.BattleRoyale.ZoneSettings
+  startRadius: 95
+  phases:
+  - waitTime: 90
+    shrinkTime: 60
+    endRadius: 70
+    damagePerSecond: 1.5
+  - waitTime: 60
+    shrinkTime: 50
+    endRadius: 45
+    damagePerSecond: 3
+  - waitTime: 45
+    shrinkTime: 40
+    endRadius: 25
+    damagePerSecond: 5
+  - waitTime: 30
+    shrinkTime: 35
+    endRadius: 12
+    damagePerSecond: 8
+  - waitTime: 20
+    shrinkTime: 30
+    endRadius: 4
+    damagePerSecond: 12
