@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88a3d12dca0ae364e8ed032d26c33627, type: 3}
   m_Name: DuckovDefault
   m_EditorClassIdentifier: Assembly-CSharp::BlockyBattleRoyale.CameraSystem.CameraProfile
-  pitchAngle: 60
+  pitchAngle: 50
   yawAngle: 45
-  distance: 22
-  heightBias: 2.5
+  distance: 9.5
+  heightBias: 0.35
   followSmoothTime: 0.14
-  lookAhead: 3.2
-  maxLookAhead: 5.5
+  lookAhead: 0.55
+  maxLookAhead: 1.3
   aimLookAheadMul: 1.4
   useOrthographic: 0
-  fieldOfView: 40
-  aimFieldOfView: 36
+  fieldOfView: 36
+  aimFieldOfView: 32
   orthographicSize: 11
   aimOrthoSize: 9.5
   targetCharScreenHeight: 0.09

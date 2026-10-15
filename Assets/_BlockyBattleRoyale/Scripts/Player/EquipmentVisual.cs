@@ -37,7 +37,7 @@ namespace BlockyBattleRoyale.Player
             if (!CompareTag("Player")) return;
             Color[] colors =
             {
-                new Color(0.15f, 0.15f, 0.16f), Color.white, new Color(0.45f, 0.45f, 0.46f),
+                new Color(0.22f, 0.34f, 0.55f), Color.white, new Color(0.45f, 0.45f, 0.46f),
                 new Color(0.7f, 0.22f, 0.2f), new Color(0.2f, 0.4f, 0.75f),
                 new Color(0.25f, 0.5f, 0.3f), new Color(0.72f, 0.62f, 0.45f)
             };

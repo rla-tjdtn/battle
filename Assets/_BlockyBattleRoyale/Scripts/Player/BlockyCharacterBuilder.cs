@@ -69,6 +69,7 @@ namespace BlockyBattleRoyale.Player
                 cc.minMoveDistance = 0f;
 
                 root.AddComponent<PlayerMotor>();
+                root.AddComponent<PlayerBodyGuard>();
                 root.AddComponent<PlayerAim>();
                 root.AddComponent<DuckovDodgeController>();
                 root.AddComponent<BlockyBattleRoyale.Audio.FootstepSystem>();

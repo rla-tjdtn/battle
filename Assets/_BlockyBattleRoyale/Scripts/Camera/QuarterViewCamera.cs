@@ -14,20 +14,20 @@ namespace BlockyBattleRoyale.CameraSystem
         [SerializeField] private Transform target;
 
         [Header("Duckov Framing")]
-        [SerializeField] private float pitchAngle = 60f;
+        [SerializeField] private float pitchAngle = 50f;
         [SerializeField] private float yawAngle = 45f;
         [Tooltip("Distance along view back-vector from follow point.")]
-        [SerializeField] private float distance = 22f;
-        [SerializeField] private float heightBias = 2.5f;
+        [SerializeField] private float distance = 9.5f;
+        [SerializeField] private float heightBias = 0.35f;
         [SerializeField] private float followSmoothTime = 0.14f;
-        [SerializeField] private float lookAhead = 3.2f;
-        [SerializeField] private float maxLookAhead = 5.5f;
+        [SerializeField] private float lookAhead = 0.55f;
+        [SerializeField] private float maxLookAhead = 1.3f;
         [SerializeField] private float aimLookAheadMul = 1.4f;
 
         [Header("Projection")]
         [SerializeField] private bool useOrthographic;
-        [SerializeField] private float fieldOfView = 40f;
-        [SerializeField] private float aimFieldOfView = 36f;
+        [SerializeField] private float fieldOfView = 36f;
+        [SerializeField] private float aimFieldOfView = 32f;
         [SerializeField] private float orthographicSize = 11f;
         [SerializeField] private float aimOrthoSize = 9.5f;
 
@@ -69,9 +69,38 @@ namespace BlockyBattleRoyale.CameraSystem
             if (cam == null)
                 cam = gameObject.AddComponent<Camera>();
 
+            ApplyPlayFraming();
             ApplyProjectionSettings();
             currentFov = fieldOfView;
             currentOrtho = orthographicSize;
+        }
+
+        private void Start()
+        {
+            ApplyPlayFraming();
+            ApplyProjectionSettings();
+            if (target == null)
+            {
+                var player = GameObject.FindGameObjectWithTag("Player");
+                if (player != null)
+                    SetTarget(player.transform);
+            }
+            SnapToTarget();
+        }
+
+        /// <summary>Close quarter view so the blocky body stays readable inside houses.</summary>
+        public void ApplyPlayFraming()
+        {
+            useOrthographic = false;
+            pitchAngle = 50f;
+            yawAngle = 45f;
+            distance = 9.5f;
+            heightBias = 0.35f;
+            lookAhead = 0.55f;
+            maxLookAhead = 1.3f;
+            fieldOfView = 36f;
+            aimFieldOfView = 32f;
+            followSmoothTime = 0.14f;
         }
 
         private void LateUpdate()
@@ -159,14 +188,7 @@ namespace BlockyBattleRoyale.CameraSystem
 
         public void ApplyDuckovDefaults()
         {
-            useOrthographic = false;
-            pitchAngle = 60f;
-            yawAngle = 45f;
-            distance = 22f;
-            heightBias = 2.5f;
-            fieldOfView = 40f;
-            aimFieldOfView = 36f;
-            followSmoothTime = 0.14f;
+            ApplyPlayFraming();
             ApplyProjectionSettings();
             SnapToTarget();
         }

@@ -6,19 +6,19 @@ namespace BlockyBattleRoyale.CameraSystem
     public class CameraProfile : ScriptableObject
     {
         [Header("Duckov Framing")]
-        public float pitchAngle = 60f;
+        public float pitchAngle = 50f;
         public float yawAngle = 45f;
-        public float distance = 22f;
-        public float heightBias = 2.5f;
+        public float distance = 9.5f;
+        public float heightBias = 0.35f;
         public float followSmoothTime = 0.14f;
-        public float lookAhead = 3.2f;
-        public float maxLookAhead = 5.5f;
+        public float lookAhead = 0.55f;
+        public float maxLookAhead = 1.3f;
         public float aimLookAheadMul = 1.4f;
 
         [Header("Projection")]
         public bool useOrthographic;
-        public float fieldOfView = 40f;
-        public float aimFieldOfView = 36f;
+        public float fieldOfView = 36f;
+        public float aimFieldOfView = 32f;
         public float orthographicSize = 11f;
         public float aimOrthoSize = 9.5f;
 

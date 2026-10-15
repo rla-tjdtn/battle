@@ -486,7 +486,7 @@ namespace BlockyBattleRoyale.EditorTools
 
             var pistol = weapons["Pistol"];
             var fists = weapons["Fists"];
-            var player = BlockyCharacterBuilder.Build("Player", new Vector3(0f, 0.05f, 0f), new Color(0.22f, 0.48f, 0.88f), true, pistol);
+            var player = BlockyCharacterBuilder.Build("Player", new Vector3(0f, 1.4f, -8f), new Color(0.22f, 0.48f, 0.88f), true, pistol);
             player.name = "Player";
             var inv = player.GetComponent<PlayerInventory>();
             inv?.SetFists(fists);

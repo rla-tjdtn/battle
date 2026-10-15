@@ -45,6 +45,8 @@ namespace BlockyBattleRoyale.UI
 
             if (resultPanel != null)
                 resultPanel.SetActive(false);
+            if (crosshair != null)
+                crosshair.rectTransform.sizeDelta = new Vector2(6f, 6f);
         }
 
         private void OnDestroy()
